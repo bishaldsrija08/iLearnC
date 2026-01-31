@@ -1,3 +1,4 @@
+// Write a program to check whether a character is a digit or not.
 #include<stdio.h>
 int main(){
     char ch;

@@ -1,3 +1,4 @@
+// Write a program to find the greatest of two numbers using the conditional operator.
 #include<stdio.h>
 int main(){
     int a,b;
