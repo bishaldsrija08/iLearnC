@@ -1,8 +1,7 @@
 #include<stdio.h>
 int main(){
-    int i = 5;
-    int *ptr = &i;
-    int **pptr = &ptr;
-    printf("Value of i: %d\n", **pptr);
+    float price = 100.00;
+    float *ptr = &price;
+    float **pptr = &ptr;
     return 0;
 }

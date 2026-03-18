@@ -1,0 +1,1 @@
+// Write a function to calculate the sum, product & average of 2 numbers. Print that average in the main function.
