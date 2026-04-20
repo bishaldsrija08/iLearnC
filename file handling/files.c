@@ -1,25 +1,31 @@
 #include<stdio.h>
 int main(){
     FILE *fptr; // declare a file pointer
-    fptr = fopen("text.txt","r");
+    fptr = fopen("text.txt","w");
     if(fptr == NULL){
         printf("Error! File cannot be opened.");
         return 0;
     }else{
-        char ch;
-        fscanf(fptr, "%c", &ch);
-        printf("The first character in the file is: %c\n", ch);
-                fscanf(fptr, "%c", &ch);
-        printf("The first character in the file is: %c\n", ch);
-                fscanf(fptr, "%c", &ch);
-        printf("The first character in the file is: %c\n", ch);
-                fscanf(fptr, "%c", &ch);
-        printf("The first character in the file is: %c\n", ch);
-                fscanf(fptr, "%c", &ch);
-        printf("The first character in the file is: %c\n", ch);
-        
+        // fprintf(fptr, "%c", 'M');
+        // fprintf(fptr, "%c", 'A');
+        // fprintf(fptr, "%c", 'N');
+        // fprintf(fptr, "%c", 'G');
+        // fprintf(fptr, "%c", 'O');
+
+        // printf("%c", fgetc(fptr));
+        // printf("%c", fgetc(fptr));
+        // printf("%c", fgetc(fptr));
+        // printf("%c", fgetc(fptr));
+        // printf("%c", fgetc(fptr));
+
+        fputc('M', fptr);
+        fputc('A', fptr);
+        fputc('N', fptr);
+        fputc('G', fptr);
+        fputc('O', fptr);
+
+
         fclose(fptr);
     }    
-
     return 0;
 }
